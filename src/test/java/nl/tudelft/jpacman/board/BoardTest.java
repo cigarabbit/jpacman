@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Basic implementatino of board
+ * Basic implementatino of board.
  */
 public class BoardTest {
 
@@ -22,7 +22,7 @@ public class BoardTest {
     }
 
     /**
-     * Test a null square
+     * Test a null square.
      */
     @Test
     void testBoardOneNullSquare(){
