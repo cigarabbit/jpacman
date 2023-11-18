@@ -3,7 +3,6 @@ package nl.tudelft.jpacman.level;
 import nl.tudelft.jpacman.board.BoardFactory;
 import nl.tudelft.jpacman.npc.ghost.Blinky;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -42,7 +41,8 @@ public class MapParserTest {
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
 
         // Additional verification
-        Mockito.verifyNoMoreInteractions(levelFactory); // Verify that there is no further interactions on levelFactory
+        // Verify that there is no further interactions on levelFactory
+        Mockito.verifyNoMoreInteractions(levelFactory);
 
     }
 
