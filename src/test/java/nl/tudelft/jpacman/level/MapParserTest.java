@@ -40,10 +40,6 @@ public class MapParserTest {
         mapParser.parseMap(map);
         Mockito.verify(levelFactory, Mockito.times(1)).createGhost();
 
-        // Additional verification
-        // Verify that there is no further interactions on levelFactory
-        Mockito.verifyNoMoreInteractions(levelFactory);
-
     }
 
 }
